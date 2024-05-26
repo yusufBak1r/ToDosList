@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		F05F5D0E2C01BC5A00BEFC31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D0D2C01BC5A00BEFC31 /* AppDelegate.swift */; };
 		F05F5D102C01BC5A00BEFC31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D0F2C01BC5A00BEFC31 /* SceneDelegate.swift */; };
-		F05F5D122C01BC5A00BEFC31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D112C01BC5A00BEFC31 /* ViewController.swift */; };
+		F05F5D122C01BC5A00BEFC31 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D112C01BC5A00BEFC31 /* MainScreen.swift */; };
 		F05F5D152C01BC5A00BEFC31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05F5D132C01BC5A00BEFC31 /* Main.storyboard */; };
 		F05F5D172C01BC5C00BEFC31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05F5D162C01BC5C00BEFC31 /* Assets.xcassets */; };
 		F05F5D1A2C01BC5C00BEFC31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05F5D182C01BC5C00BEFC31 /* LaunchScreen.storyboard */; };
 		F05F5D252C01BC5C00BEFC31 /* ToDosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D242C01BC5C00BEFC31 /* ToDosAppTests.swift */; };
 		F05F5D2F2C01BC5C00BEFC31 /* ToDosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D2E2C01BC5C00BEFC31 /* ToDosAppUITests.swift */; };
 		F05F5D312C01BC5C00BEFC31 /* ToDosAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D302C01BC5C00BEFC31 /* ToDosAppUITestsLaunchTests.swift */; };
+		F05F5D3E2C01CBBB00BEFC31 /* SaveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D3D2C01CBBB00BEFC31 /* SaveScreen.swift */; };
+		F05F5D402C01CC5000BEFC31 /* UpdateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D3F2C01CC5000BEFC31 /* UpdateScreen.swift */; };
+		F05F5D432C01D72700BEFC31 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F05F5D422C01D72700BEFC31 /* Pacifico-Regular.ttf */; };
+		F05F5D452C02035E00BEFC31 /* ToDosEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D442C02035E00BEFC31 /* ToDosEntity.swift */; };
+		F05F5D482C021F8000BEFC31 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D472C021F8000BEFC31 /* ToDoCell.swift */; };
+		F07971702C029D4B001D485A /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079716F2C029D4B001D485A /* NetworkLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		F05F5D0A2C01BC5A00BEFC31 /* ToDosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05F5D0D2C01BC5A00BEFC31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F05F5D0F2C01BC5A00BEFC31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F05F5D112C01BC5A00BEFC31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F05F5D112C01BC5A00BEFC31 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		F05F5D142C01BC5A00BEFC31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F05F5D162C01BC5C00BEFC31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F05F5D192C01BC5C00BEFC31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		F05F5D2A2C01BC5C00BEFC31 /* ToDosAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDosAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05F5D2E2C01BC5C00BEFC31 /* ToDosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosAppUITests.swift; sourceTree = "<group>"; };
 		F05F5D302C01BC5C00BEFC31 /* ToDosAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F05F5D3D2C01CBBB00BEFC31 /* SaveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveScreen.swift; sourceTree = "<group>"; };
+		F05F5D3F2C01CC5000BEFC31 /* UpdateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateScreen.swift; sourceTree = "<group>"; };
+		F05F5D422C01D72700BEFC31 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		F05F5D442C02035E00BEFC31 /* ToDosEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosEntity.swift; sourceTree = "<group>"; };
+		F05F5D472C021F8000BEFC31 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		F079716F2C029D4B001D485A /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,15 @@
 		F05F5D0C2C01BC5A00BEFC31 /* ToDosApp */ = {
 			isa = PBXGroup;
 			children = (
+				F05F5D462C021F5800BEFC31 /* Cell */,
+				F05F5D412C01D6F200BEFC31 /* Fonts */,
 				F05F5D0D2C01BC5A00BEFC31 /* AppDelegate.swift */,
+				F05F5D442C02035E00BEFC31 /* ToDosEntity.swift */,
 				F05F5D0F2C01BC5A00BEFC31 /* SceneDelegate.swift */,
-				F05F5D112C01BC5A00BEFC31 /* ViewController.swift */,
+				F05F5D112C01BC5A00BEFC31 /* MainScreen.swift */,
+				F05F5D3D2C01CBBB00BEFC31 /* SaveScreen.swift */,
+				F05F5D3F2C01CC5000BEFC31 /* UpdateScreen.swift */,
+				F079716F2C029D4B001D485A /* NetworkLayer.swift */,
 				F05F5D132C01BC5A00BEFC31 /* Main.storyboard */,
 				F05F5D162C01BC5C00BEFC31 /* Assets.xcassets */,
 				F05F5D182C01BC5C00BEFC31 /* LaunchScreen.storyboard */,
@@ -125,6 +143,22 @@
 				F05F5D302C01BC5C00BEFC31 /* ToDosAppUITestsLaunchTests.swift */,
 			);
 			path = ToDosAppUITests;
+			sourceTree = "<group>";
+		};
+		F05F5D412C01D6F200BEFC31 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F05F5D422C01D72700BEFC31 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F05F5D462C021F5800BEFC31 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F05F5D472C021F8000BEFC31 /* ToDoCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F05F5D1A2C01BC5C00BEFC31 /* LaunchScreen.storyboard in Resources */,
+				F05F5D432C01D72700BEFC31 /* Pacifico-Regular.ttf in Resources */,
 				F05F5D172C01BC5C00BEFC31 /* Assets.xcassets in Resources */,
 				F05F5D152C01BC5A00BEFC31 /* Main.storyboard in Resources */,
 			);
@@ -258,8 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F05F5D122C01BC5A00BEFC31 /* ViewController.swift in Sources */,
+				F05F5D402C01CC5000BEFC31 /* UpdateScreen.swift in Sources */,
+				F05F5D122C01BC5A00BEFC31 /* MainScreen.swift in Sources */,
+				F05F5D482C021F8000BEFC31 /* ToDoCell.swift in Sources */,
 				F05F5D0E2C01BC5A00BEFC31 /* AppDelegate.swift in Sources */,
+				F07971702C029D4B001D485A /* NetworkLayer.swift in Sources */,
+				F05F5D452C02035E00BEFC31 /* ToDosEntity.swift in Sources */,
+				F05F5D3E2C01CBBB00BEFC31 /* SaveScreen.swift in Sources */,
 				F05F5D102C01BC5A00BEFC31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +484,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDosApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDos;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,6 +512,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDosApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDos;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
