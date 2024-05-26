@@ -9,9 +9,10 @@ import UIKit
 
 class MainScreen: UIViewController {
     var delegate : ToDoCellProtocol?
-      var toDoList = [ToDosEntity]()
+      var toDoList = [ToDosModel]()
      @IBOutlet weak var tableViewList: UITableView!
      @IBOutlet weak var searchBar: UISearchBar!
+    var viewModel  = MainViewModel()
      override func viewDidLoad() {
         super.viewDidLoad()
          searchBar.delegate = self
@@ -19,17 +20,16 @@ class MainScreen: UIViewController {
          tableViewList.dataSource = self
          
           navigationConfigre()
-         loadToDos()
+         _ = viewModel.toDoList.subscribe(onNext: { list in
+             self.toDoList = list
+             self.tableViewList.reloadData()
+         })
         
     }
-    func loadToDos() {
-        let toDos1 = ToDosEntity(id:1 ,name: "Spor yap")
-        let toDos2 = ToDosEntity(id: 2,name:"Ödev")
-        let toDos3 = ToDosEntity(id:3 ,name: "Alişveriş")
-        toDoList.append(toDos1)
-        toDoList.append(toDos2)
-        toDoList.append(toDos3)
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.loadToDos()
     }
+
     func navigationConfigre(){
 //        self.navigationItem.titleView?.translatesAutoresizingMaskIntoConstraints  = false
         self.navigationItem.title = "To Dos"
@@ -53,7 +53,7 @@ class MainScreen: UIViewController {
       
         if segue.identifier == "MainToUpdate" {
             print("prepare çalıştı")
-            if let toDo  = sender as? ToDosEntity {
+            if let toDo  = sender as? ToDosModel {
                 let destinationVC = segue.destination as! UpdateScreen
                 destinationVC.ToDos = toDo
             }
@@ -65,7 +65,11 @@ class MainScreen: UIViewController {
 // MARK: -- UISearchBar Protocol func 
 extension MainScreen:UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("ToDo Serach :\(searchText)")
+        if  searchText == "" {
+            viewModel.loadToDos()
+        }else{
+            viewModel.search(text: searchText)
+        }
     }
     
 }
@@ -96,7 +100,8 @@ extension MainScreen :UITableViewDataSource,UITableViewDelegate {
                   let cencelAlert = UIAlertAction(title: "Cencel", style: .cancel)
                   alert.addAction(cencelAlert)
                   let yesAction = UIAlertAction(title: "Yes", style: .destructive) {action in
-                      print("ToDo Delete \(toDo.id!)")
+                  
+                      self.viewModel.delete(toDo: toDo)
                       
                   }
                   alert.addAction(yesAction)
@@ -119,7 +124,7 @@ extension MainScreen : ToDoCellProtocol{
         let cencelAlert = UIAlertAction(title: "Cencel", style: .cancel)
         alert.addAction(cencelAlert)
         let yesAction = UIAlertAction(title: "Yes", style: .destructive) {action in
-            print("ToDo Delete \(toDo.id!)")
+            self.viewModel.delete(toDo: toDo)
             
         }
         alert.addAction(yesAction)

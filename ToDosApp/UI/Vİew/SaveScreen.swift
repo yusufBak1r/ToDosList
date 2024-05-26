@@ -11,7 +11,7 @@ import UIKit
 class SaveScreen: UIViewController {
    
     @IBOutlet weak var textfiledName: UITextField!
-    
+    var viewModel = SaveViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,12 +26,9 @@ class SaveScreen: UIViewController {
         
        
         if let name = textfiledName.text {
-          save(name: name)
+            viewModel.save(name: name)
         }
 //        
     }
-    func save(name : String ){
-        print("To Do save :\(name)")
-        
-    }
+    
 }

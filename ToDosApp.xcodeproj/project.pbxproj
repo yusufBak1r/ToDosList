@@ -21,7 +21,13 @@
 		F05F5D432C01D72700BEFC31 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F05F5D422C01D72700BEFC31 /* Pacifico-Regular.ttf */; };
 		F05F5D452C02035E00BEFC31 /* ToDosEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D442C02035E00BEFC31 /* ToDosEntity.swift */; };
 		F05F5D482C021F8000BEFC31 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F5D472C021F8000BEFC31 /* ToDoCell.swift */; };
+		F060AE5F2C034FD700A51EC6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F060AE5D2C034FD700A51EC6 /* Model.xcdatamodeld */; };
 		F07971702C029D4B001D485A /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079716F2C029D4B001D485A /* NetworkLayer.swift */; };
+		F0B8B4582C031E3400F18DA1 /* ToDosDaoReporsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B4572C031E3400F18DA1 /* ToDosDaoReporsitory.swift */; };
+		F0B8B45D2C031EE000F18DA1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B45C2C031EE000F18DA1 /* MainViewModel.swift */; };
+		F0B8B45F2C031EF200F18DA1 /* SaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B45E2C031EF200F18DA1 /* SaveViewModel.swift */; };
+		F0B8B4612C031F0F00F18DA1 /* UpdateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B4602C031F0F00F18DA1 /* UpdateViewModel.swift */; };
+		F0B8B47A2C03289600F18DA1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F0B8B4792C03289600F18DA1 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +66,12 @@
 		F05F5D422C01D72700BEFC31 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		F05F5D442C02035E00BEFC31 /* ToDosEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosEntity.swift; sourceTree = "<group>"; };
 		F05F5D472C021F8000BEFC31 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		F060AE5E2C034FD700A51EC6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F079716F2C029D4B001D485A /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		F0B8B4572C031E3400F18DA1 /* ToDosDaoReporsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosDaoReporsitory.swift; sourceTree = "<group>"; };
+		F0B8B45C2C031EE000F18DA1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F0B8B45E2C031EF200F18DA1 /* SaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModel.swift; sourceTree = "<group>"; };
+		F0B8B4602C031F0F00F18DA1 /* UpdateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B8B47A2C03289600F18DA1 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +107,7 @@
 				F05F5D232C01BC5C00BEFC31 /* ToDosAppTests */,
 				F05F5D2D2C01BC5C00BEFC31 /* ToDosAppUITests */,
 				F05F5D0B2C01BC5A00BEFC31 /* Products */,
+				F0B8B4782C03280C00F18DA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,18 +124,17 @@
 		F05F5D0C2C01BC5A00BEFC31 /* ToDosApp */ = {
 			isa = PBXGroup;
 			children = (
+				F0B8B4552C031D1900F18DA1 /* UI */,
+				F0B8B4542C031D1000F18DA1 /* Entity */,
+				F0B8B4532C031CFE00F18DA1 /* Core */,
 				F05F5D462C021F5800BEFC31 /* Cell */,
 				F05F5D412C01D6F200BEFC31 /* Fonts */,
 				F05F5D0D2C01BC5A00BEFC31 /* AppDelegate.swift */,
-				F05F5D442C02035E00BEFC31 /* ToDosEntity.swift */,
 				F05F5D0F2C01BC5A00BEFC31 /* SceneDelegate.swift */,
-				F05F5D112C01BC5A00BEFC31 /* MainScreen.swift */,
-				F05F5D3D2C01CBBB00BEFC31 /* SaveScreen.swift */,
-				F05F5D3F2C01CC5000BEFC31 /* UpdateScreen.swift */,
-				F079716F2C029D4B001D485A /* NetworkLayer.swift */,
 				F05F5D132C01BC5A00BEFC31 /* Main.storyboard */,
 				F05F5D162C01BC5C00BEFC31 /* Assets.xcassets */,
 				F05F5D182C01BC5C00BEFC31 /* LaunchScreen.storyboard */,
+				F060AE5D2C034FD700A51EC6 /* Model.xcdatamodeld */,
 				F05F5D1B2C01BC5C00BEFC31 /* Info.plist */,
 			);
 			path = ToDosApp;
@@ -161,6 +173,84 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		F0B8B4532C031CFE00F18DA1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B4562C031DFC00F18DA1 /* repo */,
+				F079716F2C029D4B001D485A /* NetworkLayer.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F0B8B4542C031D1000F18DA1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F05F5D442C02035E00BEFC31 /* ToDosEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F0B8B4552C031D1900F18DA1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B4622C031F1300F18DA1 /* view */,
+				F0B8B45B2C031EC800F18DA1 /* MainViewModel */,
+				F0B8B45A2C031EB800F18DA1 /* SaveViewModel */,
+				F0B8B4592C031E9700F18DA1 /* updateViewModel */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F0B8B4562C031DFC00F18DA1 /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B4572C031E3400F18DA1 /* ToDosDaoReporsitory.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		F0B8B4592C031E9700F18DA1 /* updateViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B4602C031F0F00F18DA1 /* UpdateViewModel.swift */,
+			);
+			path = updateViewModel;
+			sourceTree = "<group>";
+		};
+		F0B8B45A2C031EB800F18DA1 /* SaveViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B45E2C031EF200F18DA1 /* SaveViewModel.swift */,
+			);
+			path = SaveViewModel;
+			sourceTree = "<group>";
+		};
+		F0B8B45B2C031EC800F18DA1 /* MainViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8B45C2C031EE000F18DA1 /* MainViewModel.swift */,
+			);
+			path = MainViewModel;
+			sourceTree = "<group>";
+		};
+		F0B8B4622C031F1300F18DA1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F05F5D112C01BC5A00BEFC31 /* MainScreen.swift */,
+				F05F5D3D2C01CBBB00BEFC31 /* SaveScreen.swift */,
+				F05F5D3F2C01CC5000BEFC31 /* UpdateScreen.swift */,
+			);
+			name = view;
+			path = "Vİew";
+			sourceTree = "<group>";
+		};
+		F0B8B4782C03280C00F18DA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,6 +267,9 @@
 			dependencies = (
 			);
 			name = ToDosApp;
+			packageProductDependencies = (
+				F0B8B4792C03289600F18DA1 /* RxSwift */,
+			);
 			productName = ToDosApp;
 			productReference = F05F5D0A2C01BC5A00BEFC31 /* ToDosApp.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +342,9 @@
 				Base,
 			);
 			mainGroup = F05F5D012C01BC5A00BEFC31;
+			packageReferences = (
+				F0B8B4632C03272D00F18DA1 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = F05F5D0B2C01BC5A00BEFC31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -298,9 +394,14 @@
 				F05F5D482C021F8000BEFC31 /* ToDoCell.swift in Sources */,
 				F05F5D0E2C01BC5A00BEFC31 /* AppDelegate.swift in Sources */,
 				F07971702C029D4B001D485A /* NetworkLayer.swift in Sources */,
+				F0B8B45D2C031EE000F18DA1 /* MainViewModel.swift in Sources */,
+				F0B8B45F2C031EF200F18DA1 /* SaveViewModel.swift in Sources */,
+				F0B8B4582C031E3400F18DA1 /* ToDosDaoReporsitory.swift in Sources */,
 				F05F5D452C02035E00BEFC31 /* ToDosEntity.swift in Sources */,
 				F05F5D3E2C01CBBB00BEFC31 /* SaveScreen.swift in Sources */,
 				F05F5D102C01BC5A00BEFC31 /* SceneDelegate.swift in Sources */,
+				F060AE5F2C034FD700A51EC6 /* Model.xcdatamodeld in Sources */,
+				F0B8B4612C031F0F00F18DA1 /* UpdateViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +744,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0B8B4632C03272D00F18DA1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0B8B4792C03289600F18DA1 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0B8B4632C03272D00F18DA1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F060AE5D2C034FD700A51EC6 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F060AE5E2C034FD700A51EC6 /* Model.xcdatamodel */,
+			);
+			currentVersion = F060AE5E2C034FD700A51EC6 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F05F5D022C01BC5A00BEFC31 /* Project object */;
 }

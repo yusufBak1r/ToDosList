@@ -8,9 +8,9 @@
 import UIKit
 
 class UpdateScreen: UIViewController {
-    var ToDos :ToDosEntity?
+    var ToDos :ToDosModel?
     
-
+    var viewModel  = UpdateViewModel()
     @IBOutlet weak var updateNameTextfiled: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +27,10 @@ class UpdateScreen: UIViewController {
 
     @IBAction func updateTapped(_ sender: Any) {
         if let t = ToDos,let name = updateNameTextfiled.text {
-            update(id: t.id!, name: name)
+           
+            viewModel.update(toDo: t, name: name)
         }
         
     }
-    func update(id:Int,name:String ){
-        print("Todo update \(id)-\(name)")
-    }
+  
 }
